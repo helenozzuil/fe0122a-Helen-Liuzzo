@@ -1,0 +1,175 @@
+/* IMPOSTAZIONI GENERALI */
+
+html            {font-size: 62,5%;}
+header h1       {font-size: 2rem;}
+section         {font-size: 1.1rem;}
+section h2      {font-size: 1.2em;}
+footer          {font-size: 1rem;}   
+footer address  {font-size: 0.8em;}       
+
+
+/* HEADER */
+header{
+    background-color: #04adbf;
+    padding: 50px;
+    text-align: center;    
+}
+
+h1{
+    color: white;
+    text-transform: uppercase;
+    line-height: 150%;
+    font-family: 'Raleway', sans-serif; 
+}
+
+header h2{
+    font-family: 'Raleway', sans-serif; 
+    font-size: 1.4em;
+    margin-top: 1.4em;
+    font-weight: bold; 
+    font-variant: small-caps;
+}
+
+span{
+    background-color: white;
+    color: #04adbf;
+}
+
+.hr-head {
+    color: #027794;
+    border: 5px solid;
+    margin: 0px;
+}
+
+
+/* MAIN */
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main h2{
+    font-size: 2rem;
+    color: #027794;
+    text-transform: uppercase;
+    margin: 20px;
+    font-weight: bold;
+    text-align: center;  
+    font-family: 'Raleway', sans-serif; 
+}
+
+
+/* ELEMENTI NEL MAIN */
+
+figure{
+    text-align: center;  
+}
+
+#immag{
+    border: 1px solid rgba(128, 128, 128, 0.274);
+    padding: 10px;
+}
+
+figcaption{
+    margin: 10px;
+}
+
+b{
+    font-weight: bold;
+}
+
+a{
+    color: red;
+}
+
+address{
+    margin-left: 15px;
+    margin-bottom: 35px;
+}
+
+#pre-cit{
+    margin: 20px;
+}
+
+blockquote {
+    margin: 20px;
+    background-color: rgba(128, 128, 128, 0.24);
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+div p {
+    line-height: 30px;
+    margin: 25px;
+}
+
+strong{
+    color: #04adbf;
+}
+
+hr{
+    border-top: 1px dashed black;
+    margin: 50px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-size: 27px;
+    margin: 25px;
+}
+
+mark {
+    background-color: #027794;
+    color: white;
+}
+
+ul{
+    margin: 60px;
+    line-height: 27px;
+}
+
+dt{
+    margin-left: 20px;
+    line-height: 27px;
+}
+
+dd{
+    margin-left: 40px;
+    line-height: 27px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(75, 70, 70);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer p{
+    color: #fff;
+}
+
+small{
+    color: rgb(128, 128, 128);
+}
+
+footer a{
+    display: block;
+    margin: 20px;
+}
+
+kbd{
+    color: khaki;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+#hr-closed{
+    margin: 20px;
+    border: 0px solid transparent;
+}
