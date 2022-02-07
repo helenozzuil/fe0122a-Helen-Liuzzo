@@ -1,0 +1,159 @@
+/* IMPOSTAZIONI GENERALI */
+html{font-size: 62,5%;}
+
+body {
+	color: #000;
+    font-family: 'Fira Sans', sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.65;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+}
+
+h1, h2 {
+	line-height: 1.2;
+	margin: 0 0 .5em 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size:3.5rem;
+}
+h3 {
+    font-size: 2rem;
+}
+p {
+	margin: 0 0 1.5em 0;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    font-size: 1.8rem;
+    color: white;
+    background-image: linear-gradient(to right, #6cc1e2,#392f7a);
+    padding: 2%;
+}
+ol {
+    list-style: none;
+}
+
+#form > input {
+    width: 100%;
+    float: left;
+}
+/* HEADER */
+header {
+    display: flex;
+    padding: 1.5em;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    box-sizing: content-box;
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: #d3d3d3;
+}
+#main-nav > a
+{
+    visibility: hidden;
+}
+header > button {
+    visibility: hidden;
+}
+#main-nav i {
+    float: right;
+    width: 100%;
+	font-size: 2rem;
+    color: #e42424;
+} 
+header #logo {
+    float: left;
+    width: 60%;
+	height: auto; 
+}
+/* MAIN */
+main {
+    margin-bottom: 5%;
+}
+#banner {
+    background-image: url(../images/banner.jpg);
+    color: white;
+    text-align: left;
+    padding: 5%;
+}
+
+#scrivi {
+    background-color: #0c0633;
+    color: white;
+}
+#form h1 {
+    font-size: 3.5rem;
+}
+
+#form {
+    padding: 5%;
+    width: 100%;
+}
+table {
+    text-align: left;
+    line-height: 2rem;
+    padding:2%;
+    overflow-x: auto;
+    width: 100%;
+}
+
+td {
+    border-spacing: 2%;
+    padding: 5px;
+
+table caption {
+    font-size: 2rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(238, 238, 238);
+    padding: 5%;
+    text-align: left;
+}
+footer a, i {
+    color: #e42424;
+    font-size: 2rem;
+}
+footer h2 {
+    font-size: 2rem;
+}
+footer address {
+    margin: 1%;
+}
+footer > p {
+    font-size: 1.5rem;
+}
+
+
+
+
+/* RESPONSIVE*/
+/*nel mobile layout il menù deve essere sostituito dall'icona,
+nel desktop-tablet layout il menù deve essere sulla barra in alto con grid impostato a 50% 1fr 1fr 1fr*/
+
+@media screen and (min-width 450px) {
+    body > header {
+        background-color: pink;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:650px) {
+    body > header {
+        background-color: green;
+    }
+}
