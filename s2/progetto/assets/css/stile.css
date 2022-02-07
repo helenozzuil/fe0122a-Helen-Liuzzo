@@ -1,6 +1,5 @@
 /* IMPOSTAZIONI GENERALI */
 html{font-size: 62,5%;}
-
 body {
 	color: #000;
     font-family: 'Fira Sans', sans-serif;
@@ -11,16 +10,13 @@ body {
     margin-right: auto;
     padding: 2%;
 }
-
 h1, h2 {
 	line-height: 1.2;
 	margin: 0 0 .5em 0;
 }
-
 h1 {
     font-size: 4rem;
 }
-
 h2 {
     font-size:3.5rem;
 }
@@ -30,11 +26,9 @@ h3 {
 p {
 	margin: 0 0 1.5em 0;
 }
-
 img {
     width: 100%;
 }
-
 button {
     font-size: 1.8rem;
     color: white;
@@ -44,11 +38,19 @@ button {
 ol {
     list-style: none;
 }
-
 #form > input {
     width: 100%;
     float: left;
 }
+a {
+    text-decoration: none;
+}
+
+body > i {
+    color: red;
+}
+
+
 /* HEADER */
 header {
     display: flex;
@@ -90,14 +92,17 @@ main {
     padding: 5%;
 }
 
+#motivi, #futuro-icone {
+    padding: 5%;
+}
 #scrivi {
     background-color: #0c0633;
     color: white;
+    padding: 5%;
 }
 #form h1 {
     font-size: 3.5rem;
 }
-
 #form {
     padding: 5%;
     width: 100%;
@@ -109,17 +114,28 @@ table {
     overflow-x: auto;
     width: 100%;
 }
-
 td {
     border-spacing: 2%;
     padding: 5px;
-
-table caption {
+}
+table > caption {
     font-size: 2rem;
 }
 
-/* FOOTER */
+#futuro-icone h2 {
+    font-size: 2.4rem;;
+}
 
+#futuro-icone img {
+    width: 100%;
+    height: 100%;
+}
+
+#futuro-icone ol {
+    padding-left: 3%;
+}
+
+/* FOOTER */
 footer {
     background-color: rgb(238, 238, 238);
     padding: 5%;
@@ -139,21 +155,55 @@ footer > p {
     font-size: 1.5rem;
 }
 
-
-
-
 /* RESPONSIVE*/
-/*nel mobile layout il menù deve essere sostituito dall'icona,
-nel desktop-tablet layout il menù deve essere sulla barra in alto con grid impostato a 50% 1fr 1fr 1fr*/
+@media screen and (max-width: 400px) {
+    #main-nav > a
+{
+    visibility: hidden;
+}
+header > button {
+    visibility: hidden;
+}
+}
+@media screen and (min-width:600px) {
 
-@media screen and (min-width 450px) {
-    body > header {
-        background-color: pink;
-    }
+    #main-nav > a
+{
+    visibility: visible;
+}
+header > button {
+    visibility: visible;
+}
+header > i {
+    visibility: hidden;
+}
+header #main-nav i{
+    visibility: hidden;
+}
+#logo img{
+    width: 40%;
+};
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 2rem;
+    justify-content: space-evenly;
 }
 
-@media screen and (min-width:600px) and (max-width:650px) {
-    body > header {
-        background-color: green;
+#fotopc {
+    display: flex;
+}
+
+#futuro-icone {
+    display: flex;
+}
+
+#motivi {
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
+}
 }
