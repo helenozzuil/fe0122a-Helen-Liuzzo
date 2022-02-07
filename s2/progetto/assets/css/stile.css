@@ -1,4 +1,4 @@
-/* IMPOSTAZIONI GENERALI */
+                                    /* IMPOSTAZIONI GENERALI */
 html{font-size: 62,5%;}
 body {
 	color: #000;
@@ -14,44 +14,28 @@ h1, h2 {
 	line-height: 1.2;
 	margin: 0 0 .5em 0;
 }
-h1 {
-    font-size: 4rem;
-}
-h2 {
-    font-size:3.5rem;
-}
-h3 {
-    font-size: 2rem;
-}
-p {
-	margin: 0 0 1.5em 0;
-}
-img {
-    width: 100%;
-}
+h1 {font-size: 4rem;}
+h2 {font-size:3.5rem;}
+h3 {font-size: 2rem;}
+p {margin: 0 0 1.5em 0;}
+img {width: 100%;}
 button {
     font-size: 1.8rem;
     color: white;
     background-image: linear-gradient(to right, #6cc1e2,#392f7a);
     padding: 2%;
 }
-ol {
-    list-style: none;
-}
+ol {list-style: none;}
 #form > input {
     width: 100%;
     float: left;
 }
 a {
     text-decoration: none;
+    color: #e42424;
 }
-
-body > i {
-    color: red;
-}
-
-
-/* HEADER */
+body > i {color: red;}
+                                        /* HEADER */
 header {
     display: flex;
     padding: 1.5em;
@@ -63,13 +47,8 @@ header {
     border: 1px solid white;
     box-shadow: #d3d3d3;
 }
-#main-nav > a
-{
-    visibility: hidden;
-}
-header > button {
-    visibility: hidden;
-}
+#main-nav > a {visibility: hidden;}
+header > button {visibility: hidden;}
 #main-nav i {
     float: right;
     width: 100%;
@@ -81,10 +60,8 @@ header #logo {
     width: 60%;
 	height: auto; 
 }
-/* MAIN */
-main {
-    margin-bottom: 5%;
-}
+                                            /* MAIN */
+main {margin-bottom: 5%;}
 #banner {
     background-image: url(../images/banner.jpg);
     color: white;
@@ -92,17 +69,13 @@ main {
     padding: 5%;
 }
 
-#motivi, #futuro-icone {
-    padding: 5%;
-}
+#motivi, #futuro-icone {padding: 5%;}
 #scrivi {
     background-color: #0c0633;
     color: white;
     padding: 5%;
 }
-#form h1 {
-    font-size: 3.5rem;
-}
+#form h1 {font-size: 3.5rem;}
 #form {
     padding: 5%;
     width: 100%;
@@ -118,24 +91,14 @@ td {
     border-spacing: 2%;
     padding: 5px;
 }
-table > caption {
-    font-size: 2rem;
-}
-
-#futuro-icone h2 {
-    font-size: 2.4rem;;
-}
-
+table > caption {font-size: 2rem;}
+#futuro-icone h2 {font-size: 2.4rem;}
 #futuro-icone img {
     width: 100%;
     height: 100%;
 }
-
-#futuro-icone ol {
-    padding-left: 3%;
-}
-
-/* FOOTER */
+#futuro-icone ol {padding-left: 3%;}
+                                                /* FOOTER */
 footer {
     background-color: rgb(238, 238, 238);
     padding: 5%;
@@ -145,65 +108,36 @@ footer a, i {
     color: #e42424;
     font-size: 2rem;
 }
-footer h2 {
-    font-size: 2rem;
+footer h2 {font-size: 2rem;}
+footer address {margin: 1%;}
+footer > p {font-size: 1.5rem;}
+                                                /* RESPONSIVE*/
+/* #### MOBILE #### */
+@media screen and (max-width: 480px) {
+    #main-nav > a {visibility: hidden;}
+    header > button {visibility: hidden;}
 }
-footer address {
-    margin: 1%;
-}
-footer > p {
-    font-size: 1.5rem;
-}
-
-/* RESPONSIVE*/
-@media screen and (max-width: 400px) {
-    #main-nav > a
-{
-    visibility: hidden;
-}
-header > button {
-    visibility: hidden;
-}
-}
-@media screen and (min-width:600px) {
-
-    #main-nav > a
-{
-    visibility: visible;
-}
-header > button {
-    visibility: visible;
-}
-header > i {
-    visibility: hidden;
-}
-header #main-nav i{
-    visibility: hidden;
-}
-#logo img{
-    width: 40%;
-};
-header {
+/* #### TABLET/DESKTOP #### */
+@media screen and (min-width:500px) {
+    #main-nav > a {visibility: visible;}
+    header > button {visibility: visible;}
+    header > i {visibility: hidden;}
+    header #main-nav i{visibility: hidden;}
+    #logo img{width: 40%;}
+    header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 2rem;
-    justify-content: space-evenly;
-}
-
-#fotopc {
-    display: flex;
-}
-
-#futuro-icone {
-    display: flex;
-}
-
-#motivi {
-    {
-        display: flex;
+    justify-content: space-between;
+    }
+    #fotopc {display: flex;}
+    #futuro-icone {display: flex;}
+    #motivi {
         flex-direction: row;
         flex-wrap: nowrap;
     }
-}
+    #info-footer{
+        flex-direction: row;
+        justify-content: center;
+    }
 }
