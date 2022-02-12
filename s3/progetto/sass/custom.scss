@@ -1,0 +1,29 @@
+@import 'functions';
+
+$main-color: rgb(164, 219, 159);
+
+/*Impostazioni generali*/
+body {
+    background-color: rgb(164, 219, 159);
+    width: 100rem;
+}
+
+/*Main*/
+.primo-piano {
+    text-align: center;
+}
+/*Footer*/
+
+footer {
+    text-align: center;
+}
+
+.primo-piano img {
+    height: 35vh;
+    width: 35vw;
+    border-radius: 50%;
+}
+.partnership {
+    padding: 5%;
+    margin: 5%;
+}

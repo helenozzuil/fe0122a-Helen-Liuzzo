@@ -1,0 +1,9 @@
+@function set-contrast-color($main-color) {
+    @if(lightness($main-color) > 50) {
+        @return #000;
+    }
+    @else {
+        @return #fff;
+    }
+
+}
