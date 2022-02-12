@@ -4,8 +4,9 @@ $main-color: rgb(164, 219, 159);
 
 /*Impostazioni generali*/
 body {
-    background-color: rgb(164, 219, 159);
-    width: 100rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*Main*/
@@ -21,9 +22,21 @@ footer {
 .primo-piano img {
     height: 35vh;
     width: 35vw;
-    border-radius: 50%;
+    margin-bottom: 5%;
 }
 .partnership {
-    padding: 5%;
-    margin: 5%;
+   margin: auto;
+}
+
+.carousel-inner {
+    
+    width: 50%;
+    margin: auto;
+}
+.carousel-inner img {
+    border-radius: 50%;
+}
+
+aside, .row {
+    margin:auto;
 }

@@ -1,28 +1,31 @@
 /*Impostazioni generali*/
 body {
-  background-color: #a4db9f;
-  width: 90rem;
-  margin: 0;
-  padding: 0;
- }
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
 
-/*Header*/
 /*Main*/
 .primo-piano {
-  text-align: center;
-  padding: 5%;
-  margin-bottom: 5%; }
+  text-align: center; }
 
 /*Footer*/
 footer {
   text-align: center; }
 
 .primo-piano img {
-  height: 300px;
-  width: 200px;
-  border-radius: 60%;
- border: 1px solid white;}
+  height: 35vh;
+  width: 35vw;
+  margin-bottom: 5%; }
 
 .partnership {
-  padding: 5%;
-}
+  margin: auto; }
+
+.carousel-inner {
+  width: 50%;
+  margin: auto; }
+
+.carousel-inner img {
+  border-radius: 50%; }
+
+aside, .row {
+  margin: auto; }
