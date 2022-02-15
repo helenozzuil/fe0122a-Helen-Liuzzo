@@ -6,8 +6,8 @@ function changeFont() {
     document.getElementById('para').style.textTransform = 'uppercase';
 }
 
-function somma() {
-    2 + 2;
-}
+// function somma() {
+//     2 + 2;
+// }
 
-console.log(somma());
+// console.log(somma());
