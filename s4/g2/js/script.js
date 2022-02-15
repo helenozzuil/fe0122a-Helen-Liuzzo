@@ -3,34 +3,34 @@ var corso = "FrontEndDeveloper";
 var materieCorso = 10;
 var totaleOreMateria = 40;
 var totaleOreCorso = materieCorso * totaleOreMateria;
-console.log(corso)
-console.log(materieCorso)
-console.log(totaleOreMateria)
-console.log (totaleOreCorso)
+console.log("Scheda del corso: " + corso)
+console.log("Il corso ha un totale di: " + materieCorso + " materie")
+console.log("Ogni materia dura circa: " + totaleOreMateria + " ore")
+console.log ("Il corso prevede un impegno totale di: " + totaleOreCorso + " ore")
 
 // Concatenazione
-console.log("Il corso " + corso + " dura " + totaleOreCorso)
+console.log("Il corso " + corso + " dura: " + totaleOreCorso + " ore") 
 
 //differenza var e let
 var nomeMateria = "Javascript";
-console.log(nomeMateria)
+console.log("Durante la quarta settimana si inizia: " + nomeMateria)
 {
     let nomeMateria = "HTML";
     let nomeMateria2 = "CSS";
-    console.log(nomeMateria)
-    console.log(nomeMateria2)
+    console.log("Nella prima settimana si studia " + nomeMateria)
+    console.log("Dalla seconda settimana si studia " + nomeMateria2)
 }
 // console.log(nomeMateria)
 // console.log(nomeMateria2)
 
 //differenza var e const
 var nomeCorso = "FE01";
-console.log(nomeCorso)
+console.log("Corso in partenza: " + nomeCorso)
 {
     const nomeCorso = "FS01";
-    console.log(nomeCorso)
+    console.log("Corso in partenza: " + nomeCorso)
     const nomeCorso2 = "BE01";
-    console.log(nomeCorso2)
+    console.log("Corso in partenza: " + nomeCorso2)
 }
 // console.log(nomeCorso)
 // console.log(nomeCorso2)
@@ -44,9 +44,9 @@ console.log("La studentessa: " + nome + " con la matricola: " + matricola + " di
 
 //sottrazione
 var totaleAssenze = 34;
-console.log(totaleAssenze)
+console.log("è stata assente per un totale di: " + totaleAssenze + " ore")
 var totaleOreFrequantate = totaleOreCorso - totaleAssenze;
-console.log(totaleOreFrequantate)
+console.log("è stata presente per un totale di: " +totaleOreFrequantate + " ore")
 //addizione
 var totaleOreCorso = totaleAssenze + totaleOreFrequantate;
-console.log(totaleOreCorso)
+console.log("Il corso prevedeva un totale ore di: " + totaleOreCorso)
