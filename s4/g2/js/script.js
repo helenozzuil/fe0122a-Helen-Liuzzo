@@ -44,6 +44,7 @@ console.log("La studentessa: " + nome + " con la matricola: " + matricola + " di
 
 //sottrazione
 var totaleAssenze = 34;
+console.log(totaleAssenze)
 var totaleOreFrequantate = totaleOreCorso - totaleAssenze;
 console.log(totaleOreFrequantate)
 //addizione
