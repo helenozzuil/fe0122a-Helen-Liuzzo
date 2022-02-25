@@ -23,7 +23,6 @@ document.getElementById('screen').innerHTML = a;
 	
 }
 
-
 function equalTo(){
 	document.getElementById('screen').innerHTML = '';
 
@@ -44,8 +43,6 @@ function equalTo(){
 
 	
 }
-
-
 
 function clearScr(){
 	document.getElementById('screen').innerHTML = '';
