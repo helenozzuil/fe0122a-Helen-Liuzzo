@@ -7,13 +7,11 @@ function main()
 
 function preparaSchema()
 {         
-    //elenco immagini; messe a caso, ciascuna due volte
     let immagini = [];
     crea_e_mischia_immagini();
 
     for (let i=0; i<16; i++)
     {
-        //questa volta l`immagine è scelta dall`array
         let src_immagine = " src='img/" + immagini[i] + "'";
         let img = "<img " + src_immagine +  "/>";
         
@@ -24,14 +22,14 @@ function preparaSchema()
                                stato_div + " class='carta'>" + img + "</div>");
     }
 
-    //nascondiamo tutte le carte girandole
+    //nascondere tutte le carte girandole
     $("div>img").slideToggle();
 
     //questa variabile sarà disponibile in voltaCarta
     let conta_carte = 16;            
     let id_prima_carta = "nessuna";
 
-    //associamo al click di tutti i div la stessa voltaCarta
+    //associare al click di tutti i div la stessa voltaCarta
     $("#struttura>div").on("click", voltaCarta);
 
     //NB: funzione dentro la precedente! Serve per accedere da qui
@@ -99,13 +97,13 @@ function preparaSchema()
         immagini.push("img"+i+".jpg");
       }
 
-      //mischiamole
+      //mischiarle
       for (let i=0; i<100; i++)
       {
         let pos_carta1 = Math.trunc( Math.random() * 16);
         let pos_carta2 = Math.trunc( Math.random() * 16);
 
-        //scambiale di posto
+        //scambiarle di posto
         if (pos_carta1 !== pos_carta2)
             {
           let temp = immagini[pos_carta1];
