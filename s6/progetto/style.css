@@ -1,0 +1,32 @@
+#struttura{
+    width: 600px; 
+    height: 600px; 
+    padding: 10px; 
+    margin: 0 auto; 
+}
+    
+.carta{
+    border: 2px double blue; 
+    width: 120px; 
+    height: 120px; 
+    float: left;
+    margin: 13px;
+}   
+
+.carta img{
+    width: 100%;
+    height: 100%
+} 
+
+#vittoria{
+    text-align: center;
+    width: 100%; 
+    min-height: 100px; 
+    background: red;
+    padding:50px 0; 
+    font-size:150px; 
+    z-index: 100;
+    position: absolute;
+    top:200px;
+    visibility: hidden;
+}
